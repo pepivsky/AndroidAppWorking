@@ -13,24 +13,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SplashScreen">
+        <activity android:name=".RegistroExitosoActivity"></activity>
         <activity
             android:name=".RegistroActivity"
             android:label="@string/title_activity_registro"
             android:theme="@style/Theme.SplashScreen.NoActionBar">
-            <!--<intent-filter>
+
+            <!--
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
+            </intent-filter>
+            -->
         </activity>
-
-        <!--<uses-library
+        <!--
+<uses-library
             android:name="com.google.android.wearable"
             android:required="true" />
         &lt;!&ndash;
                Set to true if your app is Standalone, that is, it does not require the handheld
                app to run.
-        &ndash;&gt;-->
+        &ndash;&gt;
+        -->
         <meta-data
             android:name="com.google.android.wearable.standalone"
             android:value="true" />

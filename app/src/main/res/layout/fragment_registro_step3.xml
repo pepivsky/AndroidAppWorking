@@ -20,7 +20,7 @@
 
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/edtPhoneNumber"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#FEA41E"
@@ -32,7 +32,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnEnviar4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"

@@ -9,10 +9,41 @@
         android:id="@+id/FirstFragment"
         android:name="com.revapplution.splashscreen.RegistroStep1Fragment"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_registro_step1"/>
+        tools:layout="@layout/fragment_registro_step1">
+        <action
+            android:id="@+id/action_FirstFragment_to_registroStep2Fragment"
+            app:destination="@id/registroStep2Fragment" />
+    </fragment>
     <fragment
         android:id="@+id/registroStep2Fragment"
         android:name="com.revapplution.splashscreen.RegistroStep2Fragment"
         android:label="fragment_registro_step2"
-        tools:layout="@layout/fragment_registro_step2" />
+        tools:layout="@layout/fragment_registro_step2" >
+        <action
+            android:id="@+id/action_registroStep2Fragment_to_registroStep4Fragment"
+            app:destination="@id/registroStep4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registroStep4Fragment"
+        android:name="com.revapplution.splashscreen.RegistroStep4Fragment"
+        android:label="fragment_registro_step4"
+        tools:layout="@layout/fragment_registro_step4" >
+        <action
+            android:id="@+id/action_registroStep4Fragment_to_registroStep5Fragment"
+            app:destination="@id/registroStep5Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registroStep5Fragment"
+        android:name="com.revapplution.splashscreen.RegistroStep5Fragment"
+        android:label="fragment_registro_step5"
+        tools:layout="@layout/fragment_registro_step5" >
+        <action
+            android:id="@+id/action_registroStep5Fragment_to_registroExitosoActivity"
+            app:destination="@id/registroExitosoActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/registroExitosoActivity"
+        android:name="com.revapplution.splashscreen.RegistroExitosoActivity"
+        android:label="activity_registro_exitoso"
+        tools:layout="@layout/activity_registro_exitoso" />
 </navigation>

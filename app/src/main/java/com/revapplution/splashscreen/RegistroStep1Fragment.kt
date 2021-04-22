@@ -12,7 +12,7 @@ import androidx.navigation.fragment.findNavController
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
 class RegistroStep1Fragment : Fragment() {
-
+    lateinit var btnContinuar: Button
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -23,6 +23,11 @@ class RegistroStep1Fragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        btnContinuar = view.findViewById(R.id.btn1Siguiente)
+
+        btnContinuar.setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_registroStep2Fragment)
+        }
 
         /*view.findViewById<Button>(R.id.button_first).setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
