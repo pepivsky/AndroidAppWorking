@@ -50,11 +50,10 @@
         app:layout_constraintGuide_percent="0.25" />
 
     <ProgressBar
-        android:id="@+id/progressBar"
+        android:id="@+id/progressBarRegistro"
         style="@style/CircularDeterminateProgressBar"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:progress="40"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toStartOf="@+id/textView2"
         app:layout_constraintHorizontal_weight="1"
@@ -67,10 +66,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="1 de 4"
-        app:layout_constraintBottom_toBottomOf="@+id/progressBar"
-        app:layout_constraintEnd_toEndOf="@+id/progressBar"
-        app:layout_constraintStart_toStartOf="@+id/progressBar"
-        app:layout_constraintTop_toTopOf="@+id/progressBar" />
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarRegistro"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarRegistro"
+        app:layout_constraintStart_toStartOf="@+id/progressBarRegistro"
+        app:layout_constraintTop_toTopOf="@+id/progressBarRegistro" />
 
     <TextView
         android:id="@+id/textView2"
@@ -81,7 +80,7 @@
         android:text="Perfil de usuario"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/progressBar"
+        app:layout_constraintStart_toEndOf="@+id/progressBarRegistro"
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
 
     <TextView
@@ -90,7 +89,7 @@
         android:layout_height="wrap_content"
         android:text="Siguiente: Direccion de domicilio"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintStart_toEndOf="@+id/progressBar"
+        app:layout_constraintStart_toEndOf="@+id/progressBarRegistro"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <androidx.fragment.app.FragmentContainerView

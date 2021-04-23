@@ -27,6 +27,7 @@ class RegistroStep5Fragment : Fragment() {
         btnValidar5 = view.findViewById(R.id.btnValidar5)
         btnValidar5.setOnClickListener {
             findNavController().navigate(R.id.action_registroStep5Fragment_to_registroExitosoActivity)
+            (activity as RegistroActivity).incrementarProgress()
         }
     }
 

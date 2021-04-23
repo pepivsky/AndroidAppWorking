@@ -34,6 +34,7 @@ class RegistroStep4Fragment : Fragment() {
         btnEnviar4 = view.findViewById(R.id.btnEnviar4)
         btnEnviar4.setOnClickListener {
             findNavController().navigate(R.id.action_registroStep4Fragment_to_registroStep5Fragment)
+            (activity as RegistroActivity).incrementarProgress()
         }
 
     }

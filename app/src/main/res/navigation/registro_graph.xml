@@ -12,7 +12,11 @@
         tools:layout="@layout/fragment_registro_step1">
         <action
             android:id="@+id/action_FirstFragment_to_registroStep2Fragment"
-            app:destination="@id/registroStep2Fragment" />
+            app:destination="@id/registroStep2Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/registroStep2Fragment"
@@ -21,7 +25,11 @@
         tools:layout="@layout/fragment_registro_step2" >
         <action
             android:id="@+id/action_registroStep2Fragment_to_registroStep4Fragment"
-            app:destination="@id/registroStep4Fragment" />
+            app:destination="@id/registroStep4Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/registroStep4Fragment"
@@ -30,7 +38,11 @@
         tools:layout="@layout/fragment_registro_step4" >
         <action
             android:id="@+id/action_registroStep4Fragment_to_registroStep5Fragment"
-            app:destination="@id/registroStep5Fragment" />
+            app:destination="@id/registroStep5Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/registroStep5Fragment"
@@ -39,7 +51,11 @@
         tools:layout="@layout/fragment_registro_step5" >
         <action
             android:id="@+id/action_registroStep5Fragment_to_registroExitosoActivity"
-            app:destination="@id/registroExitosoActivity" />
+            app:destination="@id/registroExitosoActivity"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <activity
         android:id="@+id/registroExitosoActivity"
